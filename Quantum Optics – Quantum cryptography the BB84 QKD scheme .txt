@@ -1,0 +1,280 @@
+
+
+cryptography is the art of encrypting a
+message for that to partners can
+exchange a message that they understand
+while an adversary was obtained a copy
+of the message cannot decrypt it it has
+become a tradition to name the two
+partners Alice and Bob the adversary the
+eavesdropper is usually named Eve
+a cheap joke I must admit but I am NOT
+responsible for the joke cryptography
+goes back to antiquity and has a rich
+history it is important for diplomacy
+and for military affairs and in the
+recent period it has found major
+applications for the security of the
+exchange of information on Internet the
+one-time pad technique was invented in
+the 19th century by Frank Miller and
+Joseph mobile now and patented in 1919
+by Gilbert vahanam we used an encoding
+decoding key read from a punched tape
+the key can be lists of numbers on a pad
+and reduced to a microscopic size as
+popularized by movies or novels
+
+one time bad cryptography uses two
+identical encoding decoding key that is
+to say two copies of a series of random
+characters in the hands of the two
+partners Alice and Bob here we will only
+consider 2 possible values 0 and 1 1
+partner for instance a Lisa encodes her
+message by adding to each bit of the
+message the random bit coming from the
+key Bob was an exact copy of the
+encoding key can easily decipher the
+message
+by adding the random bit of the key to
+the corresponding encoded bit in that
+scheme Alice and Bob must have the
+encoding decoding key in advance and
+keep them secret but the encoded message
+can be sent on a public channel even if
+the eavesdropper gets a copy of the
+encoded message he or she will not be
+able to decode it in contrast to most
+cryptography methods one time pad has
+been proven absolutely secure by Claude
+Shannon the father of information theory
+is demonstration is purely mathematical
+and has the solidity of a mathematical
+theorem but this absolute security is
+based on a strict condition the message
+cannot be longer than the key otherwise
+as there are many storica examples it
+would be possible for crypto analysts to
+use regularities to decipher the
+messages so when message as long as
+Sookie has been sent the key must be
+renewed in order to exchange a new
+message Alice and Bob need to obtain a
+new pair of identical encoding decoding
+case this exchange of K must be
+absolutely secure that is to say Alice
+and Bob need to be sure that no
+eavesdropper
+has been able to obtain us
+a copy of the key they are just shared
+
+it turns out that quantum technology can
+be used to solve that problem of secure
+K sharing the technology named quantum
+key distribution qkd consists of writing
+the key on a quantum support and send it
+on a channel that should remain
+confidential
+the fundamental idea of qkd is that
+after sharing the key Alice and Bob can
+make a test to check that nobody has
+been able to eavesdrop the information
+traveling on the quantum Channel if the
+test fails they renounce to use a key
+but if the test is passed they have a
+new key they can use whenever they want
+the fundamental reason why quantum
+physics ensures the security of the key
+distribution is that any measurement on
+an individual quantum object leaves a
+trace a footprint in other words it is
+impossible for Eve to read the
+information written on a quantum object
+without perturbing it this perturbation
+can be detected by Allison Bob who can
+also communicate on a channel that can
+be a classical public channel which does
+not need to be secured among several
+methods of quantum key distribution I
+present here the celebrated scheme
+called DB 84 which was described by its
+inventors charles bennett and jill Brasa
+in 1994 the theoretical scheme is
+general and could use any quantum object
+with two valued observable in practice
+the polarization of a photon turns out
+to be the privileged support of quantum
+key distribution
+
+in order to generate the key that will
+be sent to Bob Alice's a source of
+polarized photon and she can choose a
+polarization of each photon among four
+possibilities associated with two
+different linear polarization basis two
+are along the axis x and y and are often
+noted V and H for vertical and
+horizontal the two of the polarizations
+are at 45 degrees and are usually noted
+R and L for right and left
+each set corresponds to two orthogonal
+polarizations that is to say the two
+output channels of polarizing beam
+splitter conveniently oriented the two
+sets correspond to two polarizing beam
+splitters at 45 degrees from each other
+they are associated with two non
+commuting observables as you can check
+using the expressions I have given above
+when Bob receives a photon Yoon Eliza's
+it's polarization with a polarization
+beam splitter of which chooses randomly
+the orientation between the two
+possibilities either vertical or at 45
+degrees if his choice corresponds to a
+polarization sent by ELISA he obtains a
+result corresponding to the value chosen
+by Alice this is the case for instance
+if Alice sends a photon with a V or H
+polarization and if it puts is beam
+splitter at 0 degree from the x-axis but
+if we make the wrong choice that is to
+say if he put his polarizer at 45
+degrees from X when Alyssa sent H of the
+photon then he obtains a random result
+uncorrelated with the initial choice of
+a Lisa so it gets the right information
+in after cases only
+it may seem a poor result but in fact
+there is a simple way for Amana Lisa to
+know what are the right choices and keep
+these ones only this is called
+reconciliation in order for Alice and
+Bob to know what were the right choices
+it's a feces that Bob announces on the
+public channel what we're is choices of
+basis and then Alice reprise which ones
+were correct again on the public channel
+Alison Bob now know what were the
+situations when the choice of Bob was
+the right one and they keep these cases
+only there are now two identical
+encoding/decoding case the exchange of
+information between Alice and Bob about
+the chosen orientations is done on the
+public channel it can be listened to by
+Eve but we will see now that is not the
+trillion dollar when presenting the qkd
+scheme I told you that Alice and Bob can
+be sure that there is no spy was
+obtained a copy of this key can we
+demonstrate that it is indeed the case
+in order to answer such equation let us
+put ourselves in the position of the
+eavesdropper and try to get some
+information about the key sent by Alice
+to Bob at the end of the reconciliation
+procedure what would you do pause the
+video and think about it
+
+let us pretend we are Eve and try to
+obtain the same information as Bob
+without being detected to get
+information we must intercept the
+polarized photon and make a polarization
+measurement on it but that Bob will
+receive nothing and does this fit on
+this photon will not be used for the
+reconciliation procedure so we must be a
+smarter evil after doing the measurement
+we will use a 1 Photon Source to resend
+a photon towards Bob with the
+polarization we have just found ball
+will then receive a photo with a
+polarization that we know so if this
+photon is used for the key and
+information we will get on the public
+channel we will know that value of a bit
+indicate let us now take the point of
+view of Alice and Bob were as smart and
+know as much quantum optics as if they
+understand that if you do what we have
+just been describing measuring a photon
+polarization and resending a photon with
+the results I have just found can they
+detect such maneuver the answer is yes
+can you find how
+
+you do not find yet I'll give you a hint
+what Alice and Bob can do is sacrifice a
+subset of the key they are established
+after reconciliation more precisely Bob
+will choose randomly some of the cases
+where they agreed and tell on the public
+channel what he found in disguises with
+this information
+Alice can tell that there is an
+eavesdropper is there is one can you
+tell why I am sure most of you I found
+the answer let us describe it in detail
+since it will allow us to fully
+appreciate where the quantum nature of
+the signal plays a role
+the series of cases shown here allow us
+to understand there are cases when it
+does not choose a simpler ization
+orientation at the one decided by ELISA
+here it is cases number 2 3 and 5 in
+these cases the result found by Eve is
+random but this is not the point the
+fact is that in these cases ball will
+find a random result which means that in
+half these cases he finds the wrong
+direction as shown here in cases 2 & 5
+so when receiving the results found by
+Bob in cases 2 & 5 Alice will observe
+that they are wrong although Bob had
+chosen the right basis
+she will thus conclude that there is a
+spy on the channel and 1 Bob that this
+game must not be used can you tell what
+is a fraction of the cases where Bob
+gets a wrong result although we have
+chosen the right basis
+
+did you like that game where you have to
+put yourself alternatively in the
+position of Alice and Bob then of Eve
+then again Alice and Bob if you like it
+you may want to work in cryptography but
+you must know that we have only sketched
+the kind of reasoning that professional
+cryptographers have to do to evaluate
+the security of a scheme nevertheless
+this simple scheme is enough to
+understand the fundamental reason why a
+quantum scheme can be absolutely secure
+it is the impossibility to find the
+polarization of a single photon if you
+do not know what is a basis of
+polarization that was used to polarize a
+photon you cannot find what disapper
+ization in fact this property is a
+general property in quantum physics it
+is impossible to determine the full
+quantum state of a single quantum object
+any measurement amounts to projecting
+the quantum state on a basis depending
+on your measurement so all you can get
+is a value of the projection of the
+quantum state on the basis you choose
+many physicists try to find a way to
+overcome this impossibility to fully
+determine the quantum state of a single
+quantum object this stimulated the
+discovery of a very important theorem
+the no-cloning theorem which plays a
+fundamental role in proofs of the
+security of quantum key distribution
+
