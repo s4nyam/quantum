@@ -4,7 +4,6 @@ So the course work semester is started. Hence will continue the notes for qiskit
 
 Thanks for staying here.
 
-Trimester 3 has started. I have taken 2 subjects. 
+Trimester 3 has started. I have taken 
 
-1. Cryptography 
-2. Group theory for ML.
+Cryptography 
